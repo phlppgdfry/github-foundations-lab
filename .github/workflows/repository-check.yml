@@ -1,0 +1,17 @@
+name: Repository check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Verify learning-repository essentials
+        run: bash scripts/verify.sh

@@ -1,0 +1,26 @@
+name: Lab task
+description: Plan een GitHub Foundations-oefening.
+title: "lab: "
+labels: ["lab"]
+body:
+  - type: dropdown
+    id: lab
+    attributes:
+      label: Lab
+      options:
+        - "01 - Branches en commits"
+        - "02 - Pull request en review"
+        - "03 - Merge conflict"
+        - "04 - Planning en samenwerking"
+        - "05 - Discussion, tag en release"
+        - "06 - Veiligheid en permissions"
+        - "07 - Codespaces en Actions"
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Wat is je concrete bewijs?
+      description: Bijvoorbeeld een PR, Discussion, Project-item of release.
+    validations:
+      required: true
