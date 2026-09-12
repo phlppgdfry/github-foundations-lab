@@ -1,0 +1,5 @@
+{
+  "name": "GitHub Foundations Lab",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "bash scripts/verify.sh"
+}
