@@ -1,0 +1,4 @@
+.DS_Store
+.vscode/*.log
+study/private-progress.md
+*.code-workspace
